@@ -1,0 +1,77 @@
+.icon-foto {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.icon-foto-2 {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+}
+
+.icon-foto-01 {
+  background-image: url("../images/svg/icon-foto-01.svg");
+}
+.icon-box-foto-1:hover .icon-foto-01 {
+  background-image: url("../images/svg/icon-foto-01-h.svg");
+}
+
+.icon-foto-02 {
+  background-image: url("../images/svg/icon-foto-02.svg");
+}
+.icon-box-foto-1:hover .icon-foto-02 {
+  background-image: url("../images/svg/icon-foto-02-h.svg");
+}
+
+.icon-foto-03 {
+  background-image: url("../images/svg/icon-foto-03.svg");
+}
+.icon-box-foto-1:hover .icon-foto-03 {
+  background-image: url("../images/svg/icon-foto-03-h.svg");
+}
+
+.icon-foto-04 {
+  background-image: url("../images/svg/icon-foto-04.svg");
+}
+.icon-box-foto-1:hover .icon-foto-04 {
+  background-image: url("../images/svg/icon-foto-04-h.svg");
+}
+
+.icon-foto-11 {
+  background-image: url("../images/svg/icon-foto-11.svg");
+}
+.icon-box-foto-1:hover .icon-foto-11 {
+  background-image: url("../images/svg/icon-foto-11-h.svg");
+}
+
+.icon-foto-18 {
+  background-image: url("../images/svg/icon-foto-18.svg");
+}
+
+.steps:hover .icon-foto-18, .icon-foto-18-h {
+  background-image: url("../images/svg/icon-foto-18-h.svg");
+}
+
+.icon-foto-19 {
+  background-image: url("../images/svg/icon-foto-19.svg");
+}
+
+.steps:hover .icon-foto-19, .icon-foto-19-h  {
+  background-image: url("../images/svg/icon-foto-19-h.svg");
+}
+
+.icon-foto-20 {
+  background-image: url("../images/svg/icon-foto-20.svg");
+}
+
+.steps:hover .icon-foto-20, .icon-foto-20-h{
+  background-image: url("../images/svg/icon-foto-20-h.svg");
+}
+
