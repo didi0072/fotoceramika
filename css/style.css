@@ -15891,6 +15891,7 @@ select {
 .is-invalid:not(.form-control) {
   font-size: .8rem;
   color: #CE041C;
+  line-height: 1.2;
 }
 
 .is-invalid,

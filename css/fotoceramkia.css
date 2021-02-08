@@ -1,4 +1,246 @@
 /* ----------------------------------------------------------------
+	tabelka dane 
+-----------------------------------------------------------------*/
+
+.foto-thumbnail {
+	width: 70px;
+    height: 70px;
+    overflow: hidden;
+	margin: 10px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.foto-thumbnail img{
+	min-width: 70px;
+	min-height: 70px;
+	width: 70px;
+	
+}
+
+/* ----------------------------------------------------------------
+	Moje konto Menu sticky
+-----------------------------------------------------------------*/
+#mk-menu-left li {
+	padding: 17px 30px;
+	font-size: 16px;
+	font-family: 'Muli-SemiBold';
+	color: #red!important;
+	background-color: #fff;
+	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	border: 1px solid #e6e8eb;
+	margin-bottom: 10px;
+	display: block;
+	cursor: pointer;
+}
+
+#mk-menu-left li:hover, .mk-menu-left-active {
+    background-color: #00a0e3!important;
+	border: 1px solid #00a0e3!important;
+	color:#fff!important;
+	transition: ease-in;
+	transition-duration: 300ms;
+}
+
+#mk-menu-left a {
+    color: #0B1D3B!important;
+    text-decoration:none;
+}
+
+#mk-menu-left a:hover, #mk-menu-left li:hover a  {
+    color: #fff!important;
+}
+/* ----------------------------------------------------------------
+	Moje konto 
+-----------------------------------------------------------------*/
+.moje-konto-content {
+	padding: 30px;
+	background-color: #fff;
+	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	border: 1px solid #e6e8eb;
+
+}
+
+.moje-konto-content label {
+    font-size: 12px !important;
+    color: #748494 !important;
+    margin-bottom: 7px !important;
+    margin-top: 10px;
+    display: block;
+    line-height: 1.4;
+	padding-top: 3px;
+}
+	
+.moje-konto-content h2 {
+	font-size: 21px;
+	margin-bottom: 0px!important;
+	font-family: 'Muli-SemiBold';
+}
+
+.moje-konto-content h5 {
+	font-size: 13px;
+	margin-bottom: 30px;
+	color: #00A0E3;
+	font-family: 'Muli-Regular';
+}
+
+.moje-konto-content h6 {
+	font-size: 12px !important;
+	color: #00A0E3 !important;
+	margin-bottom: 5px !important;
+	margin-top: 10px;
+	display: block;
+	line-height: 1.4;
+	font-family: 'Muli-Regular';
+}
+
+.moje-konto-content p {
+	font-size: 15px;
+	font-family: "Muli-Regular", sans-serif;
+	color: #0B1D3B;
+}
+
+/* ----------------------------------------------------------------
+	kroki-small
+-----------------------------------------------------------------*/
+.foto-steps-small-container{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	flex-direction: column;	
+}
+
+.form-group input::-webkit-outer-spin-button,
+.form-group input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.form-group input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.foto-steps-small {
+	width: 70px;
+	height: 70px;
+	background-color: #F8F9FA;
+	border-radius: 35px;
+	font-size: 20px;
+	color: #A5A3B0;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	flex-direction: column;
+	font-family: "Muli-Bold", sans-serif;
+}
+
+.foto-steps-small-h {
+	background-color: #00A0E3;
+	color: #fff;
+}	
+
+.foto-steps-small-l:after {
+    content: "";
+    position: absolute;
+    top: 2.4rem;
+    left: 50%;
+    right: -50%;
+    z-index: -1;
+	border: 1px dashed #e6e8eb;
+}
+
+/* ----------------------------------------------------------------
+	Logowanie Rejestracja
+-----------------------------------------------------------------*/
+.form-group {
+	margin-bottom: 0rem!important;
+	margin-bottom: 10px!important;
+}
+
+.custom-control-label::before {
+    left: -1.5rem; 
+}
+
+.custom-control-label {
+    cursor: pointer; 
+}
+
+.foto-log{
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #fff;
+	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	border: 1px solid #e6e8eb;
+	
+}
+.foto-log h1 {
+	margin-top: 50px!important;
+	margin-bottom: -35px!important;
+	color: #00A0E3;
+	font-size: 30px;
+	font-family: 'Muli-SemiBold';
+}
+.foto-log h2 {
+	margin-top: 40px!important;
+	margin-bottom: 30px!important;
+}
+
+.foto-log input {
+	
+}
+
+.foto-log img {
+	display: inline-block;
+}
+
+
+.foto-log p {
+	font-size: 13px!important;
+	color: #748494!important;
+}
+
+.foto-log label {
+	font-size: 12px!important;
+	color: #748494!important;
+	margin-bottom: 7px!important;
+	margin-top: 10px;
+	display: block;
+	line-height: 1.4;
+	padding-top: 3px;
+}
+
+.foto-log-social{
+	padding: 10px 15px!important;
+}
+
+
+.foto-log-text-cta {
+	background-color: Transparent;
+	border: none;
+	overflow: hidden;
+    outline:none;
+	font-size: 14px;
+	text-decoration: underline;
+	color: #00a0e3;
+}
+
+.foto-log-text-cta:hover, .foto-log-text-cta:focus, .foto-log-text-cta:active  {
+	background-color: Transparent;
+	border: none;
+	outline: none;
+	color: #0056b3;	
+}
+
+.foto-log-flex {
+	display: flex;
+	align-items: center;
+}
+
+/* ----------------------------------------------------------------
 	footer
 -----------------------------------------------------------------*/
 .copyright-foto {
@@ -166,6 +408,7 @@
 	 
 	
 }
+
 .siticky-foto-thumbnail {
 	width: 70px;
 	height: 70px;
@@ -200,11 +443,9 @@
 	width: 30%;
 	float: left;
 	display: block;
-	
 }
 .sticky-70 {
 	width: 70%!important;
-
 }
 
 .sticky-foto-flex, .sticky-foto-flex-suma {
@@ -437,7 +678,7 @@ hr.foto-small-x{
 	margin-top: -5px;
 	color: #00A0E3;
 }
-.steps {
+.steps-foto {
 	width: 82px;
 	height: 82px;
 	margin: auto;
@@ -450,19 +691,13 @@ hr.foto-small-x{
   	flex-direction: column;
 }
 
-.steps span {
-}
-
-.steps:hover span {
-}
-
-.steps:hover{
+.steps-foto:hover{
 	border: 4px solid #087DAE;
 	cursor: pointer;
 	background-color: #00a0e3;
 	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.1);
 }
-.steps-h  {
+.steps-foto-h  {
 	width: 82px;
 	height: 82px;
 	margin: auto;
@@ -867,6 +1102,9 @@ hr.foto-small-x{
 }
 .margin-bottom-20 {
 	margin-bottom: 20px;
+}
+.margin-bottom-40 {
+	margin-bottom: 40px;
 }
 .padding-top-40 {
 	padding-top: 40px;
