@@ -75,3 +75,30 @@
   background-image: url("../images/svg/icon-foto-20-h.svg");
 }
 
+.icon-foto-21 {
+  background-image: url("../images/svg/icon-foto-21.svg");
+}
+.icon-box-foto-1:hover .icon-foto-21 {
+  background-image: url("../images/svg/icon-foto-21-h.svg");
+}
+
+.icon-foto-22 {
+  background-image: url("../images/svg/icon-foto-22.svg");
+}
+.icon-box-foto-1:hover .icon-foto-22 {
+  background-image: url("../images/svg/icon-foto-22-h.svg");
+}
+
+.icon-foto-23 {
+  background-image: url("../images/svg/icon-foto-23.svg");
+}
+.icon-box-foto-1:hover .icon-foto-23 {
+  background-image: url("../images/svg/icon-foto-23-h.svg");
+}
+
+.icon-foto-24 {
+  background-image: url("../images/svg/icon-foto-24.svg");
+}
+.icon-box-foto-1:hover .icon-foto-24 {
+  background-image: url("../images/svg/icon-foto-24-h.svg");
+}

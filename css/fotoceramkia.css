@@ -1,4 +1,72 @@
 /* ----------------------------------------------------------------
+	Linki / wyjątki
+-----------------------------------------------------------------*/
+
+.foto-a {
+	color: #00a0e3;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.foto-a:hover{
+	text-decoration: underline!important;
+}
+
+.foto-a-href {
+	color: #00a0e3;
+	font-size: 14px;
+}
+
+.foto-a-href:hover{
+	text-decoration: underline!important;
+}
+
+.foto-a-bloczek {
+	color: #00a0e3;
+	font-size: 14px;
+}
+
+.foto-a-bloczek:hover{
+	text-decoration: underline!important;
+	color: #fff!important;
+}
+
+@media (max-width: 767.98px) { 
+
+	.foto-medium-hide {
+		display: none!important;
+	}
+
+	.md-r-05 {
+		margin: 0px 5px;
+	}
+
+	
+ }
+
+ @media (max-width: 991.98px) {
+	.center-mobile {
+		text-align: center!important;
+	}
+	.lg-m-top-40 {
+		margin-top: 40px;
+	}
+	.foto-lg-hide {
+		display: none!important;
+	}
+
+ }
+
+
+ @media (min-width: 992px) {
+	 .sekcja-katalog {
+		overflow: visible;
+		padding: 50px 0px;
+		z-index: 10;
+	 }
+ }
+
+/* ----------------------------------------------------------------
 	tabelka dane 
 -----------------------------------------------------------------*/
 
@@ -26,7 +94,7 @@
 	padding: 17px 30px;
 	font-size: 16px;
 	font-family: 'Muli-SemiBold';
-	color: #red!important;
+	color: red!important;
 	background-color: #fff;
 	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
@@ -189,15 +257,9 @@
 	margin-bottom: 30px!important;
 }
 
-.foto-log input {
-	
-}
-
 .foto-log img {
 	display: inline-block;
 }
-
-
 .foto-log p {
 	font-size: 13px!important;
 	color: #748494!important;
@@ -567,9 +629,6 @@
 	line-height: 1.3;	
 }
 
-.label-foto-3 img {
-	
-}
 .input-foto {
 	margin-left: 0px!important;
 	cursor: pointer;
@@ -624,16 +683,15 @@
 	color: #0B1D3B;
 	margin-bottom: 0.2rem;
 }
-
 .steps-styl-cta {
 	position: absolute!important;
 	bottom: 30px;
 	position: absolute;
-	
 }
 .input-style-section {
 	padding-top: 0px;
 }
+
 
 
 /* ----------------------------------------------------------------
@@ -658,11 +716,7 @@ hr.foto-small-x{
 	border: 1px solid #e6e8eb;
 	margin-top: 10px;
 	margin-bottom: 10px;
-
-	
 }
-
-
 /* ----------------------------------------------------------------
 	Steps 
 -----------------------------------------------------------------*/
@@ -671,7 +725,6 @@ hr.foto-small-x{
 	margin-bottom: 0px;
 	margin-top: 10px;
 }
-
 .steps-font p{
 	font-size: 16px;
 	margin-bottom: 0px;
@@ -690,7 +743,6 @@ hr.foto-small-x{
     justify-content: center;
   	flex-direction: column;
 }
-
 .steps-foto:hover{
 	border: 4px solid #087DAE;
 	cursor: pointer;
@@ -711,9 +763,6 @@ hr.foto-small-x{
 	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.1);
 	background-color: #00a0e3;	
 }
-
-
-
 
 /* ----------------------------------------------------------------
 	background-image
@@ -780,8 +829,7 @@ hr.foto-small-x{
 .li-foto{
 	font-size: 17px;
 	color: #748494;
-	font-family: "Muli-SemiBold", sans-serif;
-	font-weight: 800;
+	font-family: 'Muli-Regular', sans-serif;
 }
 
 .li-foto li {
@@ -791,6 +839,50 @@ hr.foto-small-x{
 .li-foto li:before {
 	margin-left: -30px;	
 }
+
+/* ----------------------------------------------------------------
+	Flex test 
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	icon-box-foto-8
+-----------------------------------------------------------------*/
+.icon-box-foto-8 {
+	padding: 45px 30px 35px 30px;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.icon-box-foto-8 img {
+	margin-bottom: 20px;
+}
+
+.icon-box-foto-8 h4 {
+	font-size: 21px;
+	font-family: 'Muli-SemiBold';
+}
+
+.icon-box-foto-8 h3 {
+	color: #00a0e3;
+	font-family: 'Muli-SemiBold';
+	font-size: 20px;
+}
+
+.icon-box-foto-9 {
+	align-self: flex-end;
+
+}
+
+/* ----------------------------------------------------------------
+	icon-box-foto-7
+-----------------------------------------------------------------*/
+.icon-box-foto-7 {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
 /* ----------------------------------------------------------------
 	icon-box-foto-6
 -----------------------------------------------------------------*/
@@ -883,9 +975,6 @@ hr.foto-small-x{
 	font-family: 'Muli-Regular';
 }
 
-
-
-
 /* ----------------------------------------------------------------
 	icon-box-foto-4
 -----------------------------------------------------------------*/
@@ -963,10 +1052,10 @@ hr.foto-small-x{
 .icon-box-foto-2 {
 	background-color: #f7f7f7!important;
 	width: 100%;
-	height: 100%;
   	border-radius: 3px;
   	padding: 170px 20px 50px 20px; 
   	background-color: #fff;
+	margin-bottom: 20px;
 }
 .icon-box-foto-2 h4 {
 	font-size: 21px;
@@ -989,13 +1078,13 @@ hr.foto-small-x{
 -----------------------------------------------------------------*/
 .icon-box-foto-1{
 	width: 100%;
-	height: 100%;
   	border-radius: 3px;
   	box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.05);
   	padding: 20px; 
-  	background-color: #fff;
-
+  	background-color: #fff;  
+	margin-bottom: 30px;  
 }
+
 .icon-box-foto-1:hover{
 	background-color: #00a0e3;
 	transition: 0.5s;
@@ -1006,13 +1095,13 @@ hr.foto-small-x{
 	color: #fff;	
 }
 
-.icon-box-foto-1 h4{
+.icon-box-foto-1 h4, .icon-box-foto-7 h4 {
 	font-size: 18px;
-	font-family: "Muli-Bold";
+	font-family: "Muli-Semibold";
 }
-.icon-box-foto-1 p{
+
+.icon-box-foto-1 p, .icon-box-foto-7 p {
 	font-size: 14px;
-	
 }
 
 .page-title-foto-classic{
@@ -1043,8 +1132,8 @@ hr.foto-small-x{
 	
 }
 .page-title-foto h1 {
-	font-size: 40px;
-	font-family: 'Muli-ExtraBold';
+	font-size: 34px;
+	font-family: 'Muli-Bold';
 }
 
 .page-title-foto h3 {
@@ -1069,15 +1158,6 @@ hr.foto-small-x{
 .content-center-foto button{
 	width: min-content;
 }
-
-
-.section-02-foto{
-	padding-top: 100px;
-}
-.section-03-foto{
-	padding-top: 0px;
-}
-
 
 /* ----------------------------------------------------------------
 	Empty sapce
@@ -1105,6 +1185,9 @@ hr.foto-small-x{
 }
 .margin-bottom-40 {
 	margin-bottom: 40px;
+}
+.padding-top-0 {
+	padding-top: 0px!important;
 }
 .padding-top-40 {
 	padding-top: 40px;
@@ -1245,6 +1328,24 @@ i.icon-menu-foto {
 	 padding-top: 18px!important;
 }
 
+@media (max-width: 991.98px) { 
+	
+	.menu-top-foto {
+		font-size: 14px!important;
+		
+   }
+
+   i.icon-menu-foto {
+	   display: none;
+   }
+
+   .logo-foto {
+	   width: 100%;
+   }
+
+}
+
+
 .language-foto {
 	position: absolute;
 	right: 0px;
@@ -1252,13 +1353,24 @@ i.icon-menu-foto {
 	padding-right: 35px;
 	font-size: 15px;
 	font-family: "Muli-Bold", sans-serif;
-	color:	#2d84ec;
+	color:	#00a0e3;
 	padding-top: 0px!important;	
+	cursor: pointer;
+}
+
+.language-foto li {
+
+	font-family: "Muli-Regular", sans-serif;
+
+}
+
+.language-foto-dropdown {
+	margin-top: 10px!important;
 }
 
 .language-icon-foto {
 	font-size: 18px!important;
-  	color: #2d84ec;
+  	color: #00a0e3;
   	padding-left: 20px!important;;
     position: absolute;
 	right: 0px;
@@ -1335,7 +1447,6 @@ i.icon-menu-foto {
 
 .kontakt-icon {
 	display: flex;
-	
   	justify-content: center;
 }
 
@@ -1354,9 +1465,9 @@ i.icon-menu-foto {
 	background-color: #f7f7f7;
 	max-width: 100%!important;
 	padding: 45px 35px;
-	height: 412px;
-	
+	height: 412px;	
 }
+
 .oferta-foto:hover{
 	background-color: #f1d04c;
 	cursor: pointer;
@@ -1431,11 +1542,21 @@ i.icon-menu-foto {
 	margin-bottom: 50px;
 }
 
+@media (max-width: 1199.98px) {
+	
+	.oferta-foto a {
+		font-size: 12px;
+		font-family: "Muli-regular", sans-serif;
+  }
+}
+
 .row-foto h2 {
 	font-size: 31px;
 	color: #0b1d3b;
 	line-height: 1.28;
 }
+
+
 
 .row-foto h5 {
 	font-size: 18px;
@@ -1443,7 +1564,7 @@ i.icon-menu-foto {
 	font-weight: 300;
 	font-family: "Muli-Regular", sans-serif;
 	line-height: 1.28;
-	padding-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .blue-foto{
@@ -1471,4 +1592,3 @@ i.icon-menu-foto {
   	top: 50%;
   	transform: translate(-50%, -50%);
 }
-
