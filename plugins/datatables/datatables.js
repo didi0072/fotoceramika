@@ -71033,7 +71033,7 @@ this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				"sNext": "Nastepna",
 	
 	
 				/**
@@ -71056,7 +71056,7 @@ this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Poprzednia"
 			},
 	
 			/**
@@ -71111,7 +71111,7 @@ this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "od _START_ do _END_ z _TOTAL_ pozycji",
 	
 	
 			/**
@@ -71272,7 +71272,7 @@ this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Pokaż _MENU_ pozycji",
 	
 	
 			/**
@@ -71352,7 +71352,7 @@ this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Search:",
+			"sSearch": "Wyszukaj:",
 	
 	
 			/**
@@ -71410,7 +71410,7 @@ this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {
 			 *      } );
 			 *    } );
 			 */
-			"sZeroRecords": "No matching records found"
+			"sZeroRecords": "Brak wyników"
 		},
 	
 	

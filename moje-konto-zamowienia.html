@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -15,8 +14,9 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fotoceramkia.css" rel="stylesheet">
     <link href="css/fotoceramkia-icons.css" rel="stylesheet">
+    <!-- DataTables css -->
+    <link href='plugins/datatables/datatables.css' rel='stylesheet' />
 </head>
-
 <body>
     <!-- Body Inner -->
     <div class="body-inner">
@@ -149,292 +149,244 @@
                     <div class="col-lg-9">
                         <!-- Dane -->
                         <div class="tabs moje-konto-content">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h2>Dane</h2>
-                                            <h5>Twoje dane podane podczas rejestracji</h5>
-                                        </div> 
-                                    </div>
-                                    <div class="row">
-                                        <!-- DataTable -->
-                                        <div class="row" style="width: 810px;">
-                                            <div class="col-lg-12">
-                                                <table id="datatable" class="table table-bordered table-hover" style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Zdjęcie</th>
-                                                            <th>Numer</th>
-                                                            <th>Zamówienie</th>
-                                                            <th>Zdjęć</th>
-                                                            <th>Wysyłka</th>
-                                                            <th>Status</th>
-                                                            <th>Akcje</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-51.png" alt=""></td>
-                                                            <td>015124</td>
-                                                            <td>2012/05/31</td>
-                                                            <td>1</td>
-                                                            <td>2012/05/31</td>
-                                                            <td><span class="badge badge-pill badge-primary">Aktywna</span></td>
-                                                            <td><a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-50.png" alt=""></td>
-                                                            <td>225418</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>2</td>
-                                                            <td>2011/04/25</td>
-                                                            <td><span class="badge badge-pill badge-secondary">Archwiwalna</span></td>
-                                                            <td><a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-49.png" alt=""></td>
-                                                            <td>741258</td>
-                                                            <td>2013/01/07</td>
-                                                            <td>12</td>
-                                                            <td>2013/01/07</td>
-                                                            <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-52.png" alt=""></td>
-                                                            <td>458214</td>
-                                                            <td>2020/01/11</td>
-                                                            <td>4</td>
-                                                            <td>2020/01/11</td>
-                                                            <td><span class="badge badge-pill badge-info">Priorytet</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-51.png" alt=""></td>
-                                                            <td>015124</td>
-                                                            <td>2012/05/31</td>
-                                                            <td>1</td>
-                                                            <td>2012/05/31</td>
-                                                            <td><span class="badge badge-pill badge-warning">W realizacji</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-50.png" alt=""></td>
-                                                            <td>225418</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>2</td>
-                                                            <td>2011/04/25</td>
-                                                            <td><span class="badge badge-pill badge-success">Zakończona</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-49.png" alt=""></td>
-                                                            <td>741258</td>
-                                                            <td>2013/01/07</td>
-                                                            <td>12</td>
-                                                            <td>2013/01/07</td>
-                                                            <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-52.png" alt=""></td>
-                                                            <td>458214</td>
-                                                            <td>2020/01/11</td>
-                                                            <td>4</td>
-                                                            <td>2020/01/11</td>
-                                                            <td><span class="badge badge-pill badge-info">Priorytet</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-51.png" alt=""></td>
-                                                            <td>015124</td>
-                                                            <td>2012/05/31</td>
-                                                            <td>1</td>
-                                                            <td>2012/05/31</td>
-                                                            <td><span class="badge badge-pill badge-primary">Aktywna</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-50.png" alt=""></td>
-                                                            <td>225418</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>2</td>
-                                                            <td>2011/04/25</td>
-                                                            <td><span class="badge badge-pill badge-secondary">Archwiwalna</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-49.png" alt=""></td>
-                                                            <td>741258</td>
-                                                            <td>2013/01/07</td>
-                                                            <td>12</td>
-                                                            <td>2013/01/07</td>
-                                                            <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="foto-thumbnail"><img class="" src="images/img-52.png" alt=""></td>
-                                                            <td>458214</td>
-                                                            <td>2020/01/11</td>
-                                                            <td>4</td>
-                                                            <td>2020/01/11</td>
-                                                            <td><span class="badge badge-pill badge-info">Priorytet</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td><img class="" src="images/img-51.png" alt=""></td>
-                                                            <td>015124</td>
-                                                            <td>2012/05/31</td>
-                                                            <td>1</td>
-                                                            <td>2012/05/31</td>
-                                                            <td><span class="badge badge-pill badge-warning">W realizacji</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img class="" src="images/img-50.png" alt=""></td>
-                                                            <td>225418</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>2</td>
-                                                            <td>2011/04/25</td>
-                                                            <td><span class="badge badge-pill badge-success">Zakończona</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img class="" src="images/img-49.png" alt=""></td>
-                                                            <td>741258</td>
-                                                            <td>2013/01/07</td>
-                                                            <td>12</td>
-                                                            <td>2013/01/07</td>
-                                                            <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img class="" src="images/img-52.png" alt=""></td>
-                                                            <td>458214</td>
-                                                            <td>2020/01/11</td>
-                                                            <td>4</td>
-                                                            <td>2020/01/11</td>
-                                                            <td><span class="badge badge-pill badge-info">Priorytet</span></td>
-                                                            <td> <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
-                                                                <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <th>Zdjęcie</th>
-                                                            <th>Numer</th>
-                                                            <th>Zamówienie</th>
-                                                            <th>Zdjęć</th>
-                                                            <th>Wysyłka</th>
-                                                            <th>Status</th>
-                                                            <th>Akcje</th>
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <!-- end: DataTable -->           
-                                    </div>
-                                    
-                                </div>
-
-                                <div class="tab-pane fade" id="dane-edycja" role="tabpanel" aria-labelledby="profile-tab">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h2>Dane</h2>
-                                            <h5>Twoje dane podane podczas rejestracji</h5>
-                                        </div> 
-                                    </div>
-                                    <form id="form1" class="form-validate text-left">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="imie">Imię</label>
-                                                <input type="text" class="form-control" name="imie" value="Kamil" required>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label for="nazwisko">Nazwisko</label>
-                                                <input type="text" class="form-control" name="nazwisko" value="Stefaniak" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="telefon">Telefon</label>
-                                                <input type="text" class="form-control" name="telefon" value="16-621-12-24" required>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label for="telefon-2">Telefon komórkowy</label>
-                                                <input type="text" class="form-control" name="telefon-2" value="700-548-581" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="email">Adres e-mail</label>
-                                                <input type="text" class="form-control" name="email" value="Kamil@gmail.com" required>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                            </div>
-                                        </div>
-
-                                        <hr class="foto">
-                                        <button type="submit" class="btn  btn-modal-foto" style="margin-top: 20px;">Zapisz zmiany</button>
-
-                                    </form> 
-                                    
-                                </div>
-                                
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h2>Dane</h2>
+                                    <h5>Twoje dane podane podczas rejestracji</h5>
+                                </div> 
                             </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!-- DataTable -->
+                                    <table id="datatable" class="table table-bordered table-hover foto-table-data">
+                                        <thead>
+                                            <tr>
+                                                <th>Zdjęcie</th>
+                                                <th>Numer</th>
+                                                <th>Zamówienie</th>
+                                                <th>Zdjęć</th>
+                                                <th>Wysyłka</th>
+                                                <th>Status</th>
+                                                <th>Akcje</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-51.png"></td>
+                                                <td>015124</td>
+                                                <td>2012/05/31</td>
+                                                <td>1</td>
+                                                <td>2012/05/31</td>
+                                                <td><span class="badge badge-pill badge-primary">Aktywna</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-50.png"></td>
+                                                <td>225418</td>
+                                                <td>2011/04/25</td>
+                                                <td>2</td>
+                                                <td>2011/04/25</td>
+                                                <td><span class="badge badge-pill badge-secondary">Archwiwalna</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-49.png"></td>
+                                                <td>741258</td>
+                                                <td>2013/01/07</td>
+                                                <td>12</td>
+                                                <td>2013/01/07</td>
+                                                <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-52.png"></td>
+                                                <td>458214</td>
+                                                <td>2020/01/11</td>
+                                                <td>4</td>
+                                                <td>2020/01/11</td>
+                                                <td><span class="badge badge-pill badge-info">Priorytet</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-51.png"></td>
+                                                <td>015124</td>
+                                                <td>2012/05/31</td>
+                                                <td>1</td>
+                                                <td>2012/05/31</td>
+                                                <td><span class="badge badge-pill badge-warning">W realizacji</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-50.png"></td>
+                                                <td>225418</td>
+                                                <td>2011/04/25</td>
+                                                <td>2</td>
+                                                <td>2011/04/25</td>
+                                                <td><span class="badge badge-pill badge-success">Zakończona</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-49.png"></td>
+                                                <td>741258</td>
+                                                <td>2013/01/07</td>
+                                                <td>12</td>
+                                                <td>2013/01/07</td>
+                                                <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-52.png"></td>
+                                                <td>458214</td>
+                                                <td>2020/01/11</td>
+                                                <td>4</td>
+                                                <td>2020/01/11</td>
+                                                <td><span class="badge badge-pill badge-info">Priorytet</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-51.png"></td>
+                                                <td>015124</td>
+                                                <td>2012/05/31</td>
+                                                <td>1</td>
+                                                <td>2012/05/31</td>
+                                                <td><span class="badge badge-pill badge-primary">Aktywna</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-50.png"></td>
+                                                <td>225418</td>
+                                                <td>2011/04/25</td>
+                                                <td>2</td>
+                                                <td>2011/04/25</td>
+                                                <td><span class="badge badge-pill badge-secondary">Archwiwalna</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-49.png"></td>
+                                                <td>741258</td>
+                                                <td>2013/01/07</td>
+                                                <td>12</td>
+                                                <td>2013/01/07</td>
+                                                <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-52.png"></td>
+                                                <td>458214</td>
+                                                <td>2020/01/11</td>
+                                                <td>4</td>
+                                                <td>2020/01/11</td>
+                                                <td><span class="badge badge-pill badge-info">Priorytet</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-51.png"></td>
+                                                <td>015124</td>
+                                                <td>2012/05/31</td>
+                                                <td>1</td>
+                                                <td>2012/05/31</td>
+                                                <td><span class="badge badge-pill badge-warning">W realizacji</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-50.png"></td>
+                                                <td>225418</td>
+                                                <td>2011/04/25</td>
+                                                <td>2</td>
+                                                <td>2011/04/25</td>
+                                                <td><span class="badge badge-pill badge-success">Zakończona</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-49.png"></td>
+                                                <td>741258</td>
+                                                <td>2013/01/07</td>
+                                                <td>12</td>
+                                                <td>2013/01/07</td>
+                                                <td><span class="badge badge-pill badge-danger">Opóźniona</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="foto-thumbnail"><img src="images/img-52.png"></td>
+                                                <td>458214</td>
+                                                <td>2020/01/11</td>
+                                                <td>4</td>
+                                                <td>2020/01/11</td>
+                                                <td><span class="badge badge-pill badge-info">Priorytet</span></td>
+                                                <td>
+                                                    <a class="ml-2" href="moje-konto-zamowienia-szczegoly-zamowienia.html" data-toggle="tooltip" data-original-title="Edytuj"><i class="icon-edit"></i></a>
+                                                    <a class="ml-2" href="#" data-toggle="tooltip" data-original-title="Usuń"><i class="icon-trash-2"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Zdjęcie</th>
+                                                <th>Numer</th>
+                                                <th>Zamówienie</th>
+                                                <th>Zdjęć</th>
+                                                <th>Wysyłka</th>
+                                                <th>Status</th>
+                                                <th>Akcje</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <!-- end: DataTable -->   
+                                </div>
+                            </div>         
                         </div>
-                        
                     </div>
                     <!-- end: content -->
-                   
-                    
-                    
-                    
                 </div>
             </div>
         </section>
         <!-- end: SEKCJA 1  -->
         
-       
-
         <!-- Footer -->
         <footer id="footer" class="inverted">
             <div class="footer-content">
@@ -502,7 +454,6 @@
             </div>
         </footer>
         <!-- end: Footer -->
-
     </div>
 
     <!-- end: Body Inner -->
@@ -518,7 +469,7 @@
     <script src="plugins/validate/valildate-rules.js"></script>
 
     <!--Datatables plugin files-->
-    <script src='plugins/datatables/datatables.min.js'></script>
+    <script src='plugins/datatables/datatables.js'></script>
     <script>
         $(document).ready(function () {
             var table = $('#datatable').DataTable({
@@ -558,8 +509,5 @@
             $("#export_buttons .btn").removeClass('btn-secondary').addClass('btn-light');
         });
     </script>
-    
-    
 </body>
-
 </html>

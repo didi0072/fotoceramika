@@ -67,39 +67,46 @@
 
 
  @media (min-width: 992px) {
-	 .sekcja-katalog {
+	.sekcja-katalog {
 		overflow: visible;
 		padding: 50px 0px;
 		z-index: 10;
-	 }
- }
-
- @media (min-width: 992px) { 
+	}
 	.foto-medium-hide-up {
 		display: none!important;
 	}
+
+	
+ }
+
+ @media (min-width: 768px) { 
+	.foto-medium-margin {
+		margin: 0px 10px;
+	}
+	
   }
 /* ----------------------------------------------------------------
 	tabelka dane 
 -----------------------------------------------------------------*/
 
 .foto-thumbnail {
-	width: 70px;
-    height: 70px;
-    overflow: hidden;
-	margin: 10px;
-	border-radius: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .foto-thumbnail img{
-	min-width: 70px;
-	min-height: 70px;
 	width: 70px;
-	
+	border-radius: 5px;
+}
+.foto-table-data td, .foto-table-data th{
+	vertical-align: inherit!important;
 }
 
+.dataTables_filter {
+	display: flex;
+	justify-content: right;
+}
 /* ----------------------------------------------------------------
 	Moje konto Menu sticky
 -----------------------------------------------------------------*/
@@ -107,7 +114,6 @@
 	padding: 17px 30px;
 	font-size: 16px;
 	font-family: 'Muli-SemiBold';
-	color: red!important;
 	background-color: #fff;
 	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
@@ -137,12 +143,16 @@
 	Moje konto 
 -----------------------------------------------------------------*/
 .moje-konto-content {
-	padding: 30px;
+	padding: 30px 30px;
 	background-color: #fff;
 	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
 	border: 1px solid #e6e8eb;
+}
 
+.moje-konto-content-50 {
+	padding: 15px;
+	margin-top: 15px;
 }
 
 .moje-konto-content label {
@@ -182,6 +192,14 @@
 	font-size: 15px;
 	font-family: "Muli-Regular", sans-serif;
 	color: #0B1D3B;
+}
+
+.moje-konto-content ul {
+    list-style-type: none;
+}
+tr:last-child {
+    font-size: 20px;
+	font-family: "Muli-Bold", sans-serif;
 }
 
 /* ----------------------------------------------------------------
@@ -249,6 +267,15 @@
     cursor: pointer; 
 }
 
+.custom-control a {
+    cursor: pointer;
+	color :#00A0E3; 
+}
+
+.custom-control a:hover {
+    text-decoration: underline!important;
+}
+
 .foto-log{
 	padding-left: 30px;
 	padding-right: 30px;
@@ -291,7 +318,6 @@
 .foto-log-social{
 	padding: 10px 15px!important;
 }
-
 
 .foto-log-text-cta {
 	background-color: Transparent;
@@ -360,7 +386,31 @@
 .footer-foto img{
 	margin-top: 15px;
 }
+/* ----------------------------------------------------------------
+	popupy
+-----------------------------------------------------------------*/
+.foto-regulamin-popup {
+	font-size: 12px;
+}
+.foto-regulamin-popup ol {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.foto-regulamin-popup ul {
+	margin-top: 5px;
+}
 
+.foto-regulamin-popup ol>li {
+	margin-top: 10px;
+}
+
+.foto-regulamin-popup ul>li {
+	margin-left: 30px;
+}
+
+.foto-regulamin-popup h5 {
+	margin-top: 10px;
+}
 /* ----------------------------------------------------------------
 	modal
 -----------------------------------------------------------------*/
@@ -368,30 +418,24 @@
 	padding-left: 30px!important;
 	padding-right: 30px!important;
 }
-
 .btn-modal-foto {
 	padding: 13px 25px!important;
 	font-size: 15px!important;
 }
-
 .modalfofo label {
 	margin-bottom: 0px;
 }
-
 /* ----------------------------------------------------------------
 	allerty
 -----------------------------------------------------------------*/
-
 .alert-foto-yellow a {
 	color: #5b4413;
 	text-decoration: underline;
 }
-
 .alert-foto-yellow a:hover {
 	color: #826d41!important;
 	text-decoration: underline!important;
 }
-
 /* ----------------------------------------------------------------
 	flexbox 50-50
 -----------------------------------------------------------------*/
@@ -408,12 +452,10 @@
  	border-radius: 5px;
  	margin-top: 10px;
 }
-
  /* wyjątek do popupów */
  .modal {
 	 background-color: rgba(11, 29, 59, 0.4)!important;
  }
-
  /* ----------------------------------------------------------------
 	Zamówienie Sticky
 -----------------------------------------------------------------*/
@@ -480,8 +522,6 @@
 
 .siticky-foto-content {
 	padding: 0px 15px;
-	 
-	
 }
 
 .siticky-foto-thumbnail {
