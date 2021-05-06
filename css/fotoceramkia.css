@@ -31,6 +31,12 @@
 	color: #fff!important;
 }
 
+@media (max-width: 575.98px) { 
+	.xs-bottom-30 {
+		margin-bottom: 30px;
+	}
+}
+
 @media (max-width: 767.98px) { 
 
 	.foto-medium-hide {
@@ -40,7 +46,7 @@
 	.md-r-05 {
 		margin: 10px 5px;
 	}
-
+	
 	
  }
 
@@ -61,10 +67,14 @@
 	.lg-top-30 {
 		margin-top: 30px;
 	}
-	
+	.lg-bottom-30 {
+		margin-bottom: 30px;
+	}
+	.imput-row span {
+		font-size: 13px;
+	}
 
  }
-
 
  @media (min-width: 992px) {
 	.sekcja-katalog {
@@ -75,21 +85,19 @@
 	.foto-medium-hide-up {
 		display: none!important;
 	}
-
-	
  }
 
  @media (min-width: 768px) { 
 	.foto-medium-margin {
 		margin: 0px 10px;
 	}
-	
+
   }
 /* ----------------------------------------------------------------
 	tabelka dane 
 -----------------------------------------------------------------*/
 
-.foto-thumbnail {
+.foto-thumbnail, .foto-thumbnail-table {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -99,6 +107,18 @@
 	width: 70px;
 	border-radius: 5px;
 }
+
+.foto-thumbnail-table img {
+	width: 80%;
+	border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+	.foto-thumbnail-table img {
+		margin-bottom: 30px;
+	}
+ }
+
 .foto-table-data td, .foto-table-data th{
 	vertical-align: inherit!important;
 }
@@ -142,7 +162,7 @@
 /* ----------------------------------------------------------------
 	Moje konto 
 -----------------------------------------------------------------*/
-.moje-konto-content {
+.moje-konto-content, .pcb-foto-zamowienie {
 	padding: 30px 30px;
 	background-color: #fff;
 	box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
@@ -197,10 +217,47 @@
 .moje-konto-content ul {
     list-style-type: none;
 }
-tr:last-child {
+.moje-konto-table tr:last-child {
     font-size: 20px;
 	font-family: "Muli-Bold", sans-serif;
 }
+
+.table-foto-simple, .table-foto-simple-r {
+	width: 100%;
+}
+
+.table-foto-simple td, .table-foto-simple-r td {
+	padding-top: 0px;
+	padding-bottom: 8px;
+	width: 50%;
+	vertical-align: top;
+}
+
+.table-foto-simple td:nth-child(1), .table-foto-simple-r td:nth-child(1) {  
+	color: #00A0E3;
+  }
+
+.table-foto-simple-r td:nth-child(2) {  
+	text-align: right !important;
+  }
+
+.table-foto-adresy td {
+	vertical-align: inherit!important;
+}
+
+.table-foto-adresy i:hover {
+	cursor: pointer;
+	color: #00A0E3;
+
+} 
+ 
+
+@media (max-width: 991.98px) 
+  {
+	.table-foto-simple td:nth-child(2) {  
+		text-align: right;
+	  }
+ }
 
 /* ----------------------------------------------------------------
 	kroki-small
@@ -621,11 +678,11 @@ tr:last-child {
     box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     border: 1px solid #e6e8eb;
-    width: 50%;
+   
     margin: 0 15px;
 }
 
-.textarea-foto{
+.textarea-foto {
 	min-height: 110px;
 }
 .imput-row {
@@ -966,8 +1023,7 @@ hr.foto-small-x{
 	color: #1f1f1f;	
 	padding-bottom: 0px!important;
 	position: absolute;
-	right: 0%;
-	width: 12%;
+	left: 0px;
 
 }
 /* ----------------------------------------------------------------
