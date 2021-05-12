@@ -796,9 +796,7 @@
 	margin-bottom: 0.2rem;
 }
 .steps-styl-cta {
-	position: absolute!important;
-	bottom: 30px;
-	position: absolute;
+	margin-top: 30px;
 }
 .input-style-section {
 	padding-top: 0px;
@@ -993,11 +991,10 @@ hr.foto-small-x{
 	font-weight: 100;
 	font-family: 'Muli-Regular';
 	display: inline-block;
-	margin-bottom: 0px;
 }
 
 .icon-box-foto-6 img {
-	margin-left: 25px;
+	margin-left: 10px;
 }
 .icon-box-foto-6-c img {
 	margin-left: -18px;
@@ -1021,9 +1018,8 @@ hr.foto-small-x{
 	font-weight: 100;
 	font-family: 'Muli-Regular';
 	color: #1f1f1f;	
-	padding-bottom: 0px!important;
 	position: absolute;
-	left: 0px;
+	right: 60px;
 
 }
 /* ----------------------------------------------------------------
